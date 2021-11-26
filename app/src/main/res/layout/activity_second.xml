@@ -26,6 +26,7 @@
         android:layout_height="25dp"
         android:layout_marginStart="48dp"
         android:text="MN휘트니스 강남점"
+        android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
         android:textSize="15sp"
@@ -42,11 +43,10 @@
         android:layout_height="64dp"
         android:layout_marginTop="28dp"
         android:text="평일 06:00~24:00
-
         가입비, 부가세 없는
-
-월 30,000"
+      월 30,000"
         android:textColor="#FFFFFF"
+        android:textAlignment="center"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -60,7 +60,9 @@
         android:layout_width="158dp"
         android:layout_height="25dp"
         android:layout_marginTop="24dp"
-        android:text="0507-1361-0000"
+        android:autoLink="phone"
+        android:text="+82-507-1361-0000"
+        android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/textView13"
