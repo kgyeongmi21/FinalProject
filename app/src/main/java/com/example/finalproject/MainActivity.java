@@ -20,10 +20,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void startSecondActivity() {
-        String message = binding.textMNfitness.getText().toString();
 
         Intent intent = new Intent(this, SecondActivity.class);
         startActivity(intent);
-        intent.putExtra("MNfitness", message);
     }
 }
