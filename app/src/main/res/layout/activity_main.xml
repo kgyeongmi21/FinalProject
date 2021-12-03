@@ -6,314 +6,311 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/text_MNfitness"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="60dp"
-        android:text="MN휘트니스 강남점"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView"
-        app:layout_constraintHorizontal_bias="0.0"
+
+    <Button
+        android:id="@+id/buttonClose2"
+        android:layout_width="62dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/white"
+        android:outlineProvider="background"
+        android:text="뒤로"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/image_MNfitness"
-        app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="60dp"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/text_MNfitness"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="7dp"
+        android:text="MN휘트니스\n강남점"
+        android:textAlignment="center"
         app:layout_constraintEnd_toStartOf="@+id/textView5"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5"
-        app:layout_constraintVertical_bias="0.04" />
+        app:layout_constraintHorizontal_bias="0.402"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_gorilla_gym" />
+
+    <TextView
+        android:id="@+id/text_MNfitness2"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="7dp"
+        android:text="MN휘트니스\n강남점"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.407"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_MNfitness" />
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.922"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView11"
-        app:layout_constraintVertical_bias="0.272" />
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="24dp"
+        android:text="휘트니스피플\n신림점"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.979"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/image_fitnesspeople_sinlim" />
 
     <TextView
         android:id="@+id/textView12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="60dp"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView6"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView8"
-        app:layout_constraintVertical_bias="0.288" />
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="7dp"
+        android:text="스퀘어짐\n가좌점"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.242"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/image_squaregym_gajua" />
 
     <TextView
         android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="64dp"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView12"
-        app:layout_constraintHorizontal_bias="0.089"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView13"
-        app:layout_constraintVertical_bias="0.288" />
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="7dp"
+        android:text="자마이카\n휘트니스\n화곡점"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_jamaica_hwagok" />
 
     <TextView
         android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="60dp"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="7dp"
+        android:text="휘트니스W"
+        android:textAlignment="center"
         app:layout_constraintEnd_toStartOf="@+id/textView8"
-        app:layout_constraintHorizontal_bias="0.089"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView12"
-        app:layout_constraintVertical_bias="0.058" />
+        app:layout_constraintHorizontal_bias="0.407"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_fitnessw" />
 
     <TextView
         android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.922"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView10"
-        app:layout_constraintVertical_bias="0.058" />
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="7dp"
+        android:text="MN휘트니스\n강남점"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.671"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/image_spoani_gangnam1" />
 
     <TextView
         android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="60dp"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView7"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView9"
-        app:layout_constraintVertical_bias="0.058" />
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="7dp"
+        android:text="에이플랜짐"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_aplangym" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.922"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7"
-        app:layout_constraintVertical_bias="0.043" />
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="7dp"
+        android:text="휘트니스\n에이든\n홍대점"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.675"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/image_aiden" />
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="64dp"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        android:layout_width="79dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="156dp"
+        android:text="휴메이크\n휘트니스\n강남점"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6"
-        app:layout_constraintVertical_bias="0.043" />
+        app:layout_constraintTop_toBottomOf="@+id/image_humake" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="64dp"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView2"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.025" />
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="7dp"
+        android:text="엘스퀘어\n휘트니스"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_lsquare" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.919"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
-        app:layout_constraintVertical_bias="0.025" />
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="7dp"
+        android:text="휘트니스FM\n서울대점"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.675"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/image_fitnessfm" />
 
     <ImageView
         android:id="@+id/image_MNfitness"
         android:layout_width="103dp"
         android:layout_height="110dp"
         android:layout_marginStart="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        android:layout_marginTop="7dp"
+        android:src="@drawable/mnfitness"
+        app:layout_constraintEnd_toStartOf="@+id/image_lsquare"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.025"
-        android:src="@drawable/mnfitness"/>
+        app:layout_constraintTop_toBottomOf="@+id/buttonClose2" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/image_gorilla_gym"
         android:layout_width="103dp"
         android:layout_height="110dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="36dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView6"
-        app:layout_constraintHorizontal_bias="1.0"
+        android:layout_marginTop="7dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/gorilla_gym"
+        app:layout_constraintEnd_toStartOf="@+id/image_humake"
+        app:layout_constraintHorizontal_bias="0.38"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_MNfitness"
-        app:layout_constraintVertical_bias="0.0"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintTop_toBottomOf="@+id/text_MNfitness2" />
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/image_squaregym_gajua"
         android:layout_width="103dp"
         android:layout_height="110dp"
-        android:layout_marginTop="36dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView11"
-        app:layout_constraintHorizontal_bias="0.815"
+        android:layout_marginTop="7dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/squaregym_gajua"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8"
-        app:layout_constraintVertical_bias="0.015"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <ImageView
-        android:id="@+id/imageView13"
+        android:id="@+id/image_jamaica_hwagok"
         android:layout_width="103dp"
         android:layout_height="110dp"
-        android:layout_marginTop="36dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView8"
-        app:layout_constraintHorizontal_bias="0.301"
+        android:layout_marginTop="7dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/jamaica_hwagok"
+        app:layout_constraintEnd_toStartOf="@+id/image_squaregym_gajua"
+        app:layout_constraintHorizontal_bias="0.38"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9"
-        app:layout_constraintVertical_bias="0.03"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <ImageView
-        android:id="@+id/imageView12"
+        android:id="@+id/image_fitnessw"
         android:layout_width="103dp"
         android:layout_height="110dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="44dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView9"
-        app:layout_constraintHorizontal_bias="0.25"
+        android:layout_marginTop="7dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fitnessw"
+        app:layout_constraintEnd_toStartOf="@+id/image_aplangym"
+        app:layout_constraintHorizontal_bias="0.315"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.0"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintTop_toBottomOf="@+id/text_MNfitness" />
 
     <ImageView
-        android:id="@+id/imageView9"
+        android:id="@+id/image_aplangym"
         android:layout_width="103dp"
         android:layout_height="110dp"
-        android:layout_marginTop="44dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView10"
-        app:layout_constraintHorizontal_bias="0.815"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:layout_constraintVertical_bias="0.004"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="103dp"
-        android:layout_height="110dp"
-        android:layout_marginTop="44dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="7dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/aplangym"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.951"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.008"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <ImageView
-        android:id="@+id/imageView11"
+        android:id="@+id/image_spoani_gangnam1"
         android:layout_width="103dp"
         android:layout_height="110dp"
-        android:layout_marginTop="36dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="7dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/spoani_gangnam1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.948"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7"
-        app:layout_constraintVertical_bias="0.015"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintHorizontal_bias="0.619"
+        app:layout_constraintStart_toEndOf="@+id/image_humake"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/image_fitnesspeople_sinlim"
         android:layout_width="103dp"
         android:layout_height="110dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView7"
-        app:layout_constraintHorizontal_bias="0.815"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.299"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="103dp"
-        android:layout_height="110dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="7dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fitnesspeople_sinlim"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintHorizontal_bias="0.941"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.299"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/image_humake"
         android:layout_width="103dp"
         android:layout_height="110dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView4"
-        app:layout_constraintHorizontal_bias="0.815"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.025"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="103dp"
-        android:layout_height="110dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="7dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/humake_gangnam"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.948"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.025"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/image_aiden"
+        android:layout_width="103dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="7dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/aiden_hongdae"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.604"
+        app:layout_constraintStart_toEndOf="@+id/image_aplangym"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <ImageView
+        android:id="@+id/image_lsquare"
+        android:layout_width="103dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="7dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/lsquare"
+        app:layout_constraintEnd_toStartOf="@+id/image_fitnessfm"
+        app:layout_constraintHorizontal_bias="0.847"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonClose2" />
+
+    <ImageView
+        android:id="@+id/image_fitnessfm"
+        android:layout_width="103dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="7dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fitnessfm_seoul"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonClose2" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

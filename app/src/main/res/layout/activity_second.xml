@@ -4,59 +4,51 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#111C59"
+    android:background="#595B5E"
     tools:context=".SecondActivity">
 
     <ImageView
-        android:id="@+id/imageReceive"
+        android:id="@+id/Main_image"
         android:layout_width="175dp"
         android:layout_height="172dp"
         android:layout_marginTop="12dp"
         android:src="@drawable/mnfitness"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.105"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonClose"
-        app:layout_constraintVertical_bias="0.012" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonClose" />
 
     <TextView
-        android:id="@+id/textReceive"
-        android:layout_width="122dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="48dp"
+        android:id="@+id/Name_text"
+        android:layout_width="125dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="64dp"
         android:text="MN휘트니스 강남점"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textStyle="bold"
         android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/imageReceive"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.1" />
+        app:layout_constraintHorizontal_bias="0.847"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView13"
         android:layout_width="160dp"
         android:layout_height="64dp"
-        android:layout_marginTop="28dp"
-        android:text="평일 06:00~24:00
-        가입비, 부가세 없는
-      월 30,000"
-        android:textColor="#FFFFFF"
+        android:layout_marginTop="12dp"
+        android:text="평일 06:00~24:00\n가입비, 부가세 없는\n월 30,000"
         android:textAlignment="center"
+        android:textColor="#FFFFFF"
         android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.45"
-        app:layout_constraintStart_toEndOf="@+id/imageReceive"
-        app:layout_constraintTop_toBottomOf="@+id/textReceive"
-        app:layout_constraintVertical_bias="0.058" />
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toEndOf="@+id/Main_image"
+        app:layout_constraintTop_toBottomOf="@+id/telephone" />
 
     <TextView
-        android:id="@+id/textView17"
+        android:id="@+id/telephone"
         android:layout_width="158dp"
         android:layout_height="25dp"
         android:layout_marginTop="24dp"
@@ -65,26 +57,24 @@
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="15sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView13"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.471"
-        app:layout_constraintStart_toEndOf="@+id/imageReceive"
-        app:layout_constraintTop_toBottomOf="@+id/textReceive"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toEndOf="@+id/Main_image"
+        app:layout_constraintTop_toBottomOf="@+id/Name_text" />
 
     <Button
         android:id="@+id/button_learnmore"
         android:layout_width="105dp"
         android:layout_height="46dp"
         android:layout_marginTop="28dp"
-        android:backgroundTint="#2196F3"
+        android:backgroundTint="#9B9FA5"
         android:text="알아보기"
         app:layout_constraintBottom_toTopOf="@+id/textView15"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintHorizontal_bias="0.055"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageReceive"
-        app:layout_constraintVertical_bias="0.038" />
+        app:layout_constraintTop_toBottomOf="@+id/Main_image"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/button_location"
@@ -92,53 +82,50 @@
         android:layout_height="46dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="28dp"
-        android:backgroundTint="#2196F3"
+        android:backgroundTint="#9B9FA5"
         android:text="위치보기"
         app:layout_constraintBottom_toTopOf="@+id/textView15"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/button_learnmore"
-        app:layout_constraintTop_toBottomOf="@+id/imageReceive"
+        app:layout_constraintTop_toBottomOf="@+id/Main_image"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/button_review"
         android:layout_width="105dp"
         android:layout_height="46dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="28dp"
-        android:backgroundTint="#2196F3"
+        android:backgroundTint="#9B9FA5"
         android:text="리뷰 보기"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.037"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/button_location"
-        app:layout_constraintTop_toBottomOf="@+id/textView13"
-        app:layout_constraintVertical_bias="0.054" />
+        app:layout_constraintTop_toBottomOf="@+id/Main_image" />
 
     <TextView
         android:id="@+id/textView15"
-        android:layout_width="360dp"
-        android:layout_height="340dp"
+        android:layout_width="355dp"
+        android:layout_height="305dp"
         android:layout_marginTop="24dp"
-        android:text="TextView"
+        android:text="MN브랜드 소개\n\n프랑스 명품 스포츠 브랜드로 시작하여 현재 고급 휘트니스 센터 5개의 지점을 운영 중에 있습니다.\nMN강남점 소개\n약 300평 규모의 강남역 헬스장\n헬스 (40여개의 웨이트 머신과 30여개의 유산소 머신)\nPT(9여명의 셀레브리티 트레이너 팀)\n기구필라테스(1:1 개인 및 2:1 기구 필라테스)\n파우더룸 + 샤워시설 (매일 청결하게 관리하는 파우더룸 및 샤워시설)\n회원전용 카페 (프로틴음료, 프로틴볼, 에너지드링크 등 다양한 음료 및 간식)"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button7"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/button_review"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/copyright"
         android:layout_width="match_parent"
         android:layout_height="18dp"
         android:layout_marginTop="28dp"
-        android:background="#040A27"
+        android:background="#FFFFFF"
         android:gravity="start"
         android:text=" copyright"
-        android:textColor="#FFFFFF"
+        android:textColor="#595B5E"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -156,7 +143,19 @@
         android:text="뒤로"
         android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="355dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="656dp"
+        android:autoLink="web"
+        android:text="홈페이지 : www.mnkorea.kr\n블로그 : blog.naver.com/mnfitness1\n인스타그램 : instagram.com/mnfitness.kr"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

@@ -10,8 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalProject">
         <activity
+            android:name=".ThirdActivity"
+            android:exported="true" />
+        <activity
             android:name=".SecondActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

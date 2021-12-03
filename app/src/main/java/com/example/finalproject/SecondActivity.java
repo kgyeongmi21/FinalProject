@@ -20,6 +20,12 @@ public class SecondActivity extends AppCompatActivity {
         binding.buttonClose.setOnClickListener(v -> finish());
         binding.buttonLearnmore.setOnClickListener(v -> openLink());
         binding.buttonLocation.setOnClickListener(v -> searchLocation());
+        binding.buttonReview.setOnClickListener(v -> startThirdActivity());
+    }
+
+    public void startThirdActivity() {
+        Intent intent = new Intent(this, ThirdActivity.class);
+        startActivity(intent);
     }
 
     public void finish() {
@@ -39,4 +45,5 @@ public class SecondActivity extends AppCompatActivity {
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
         startActivity(intent);
     }
+
 }
