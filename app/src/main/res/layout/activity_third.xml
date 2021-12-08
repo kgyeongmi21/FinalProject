@@ -76,29 +76,34 @@
         app:layout_constraintStart_toEndOf="@+id/Main_image"
         app:layout_constraintTop_toBottomOf="@+id/telephone_review" />
 
-    <ImageView
-        android:id="@+id/like_icon"
+    <ImageButton
+        android:id="@+id/like_button"
         android:layout_width="45dp"
         android:layout_height="45dp"
-        android:layout_marginStart="84dp"
+        android:layout_marginStart="92dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView17"
+        android:scaleType="fitCenter"
+        android:src="@drawable/like"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@+id/review_text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Main_image"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/like" />
+        app:layout_constraintVertical_bias="0.0" />
 
-    <ImageView
-        android:id="@+id/dislike_icon"
+    <ImageButton
+        android:id="@+id/dislike_button"
         android:layout_width="45dp"
         android:layout_height="45dp"
         android:layout_marginStart="52dp"
         android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/dislike"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.022"
         app:layout_constraintStart_toEndOf="@+id/like_amount"
         app:layout_constraintTop_toBottomOf="@+id/Main_image"
-        app:srcCompat="@drawable/dislike" />
+         />
 
     <TextView
         android:id="@+id/dislike_amount"
@@ -106,12 +111,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:padding="10dp"
-        android:text="1"
+        android:text=""
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView17"
-        app:layout_constraintStart_toEndOf="@+id/dislike_icon"
+        app:layout_constraintBottom_toTopOf="@+id/review_text"
+        app:layout_constraintStart_toEndOf="@+id/dislike_button"
         app:layout_constraintTop_toBottomOf="@+id/Main_image"
         app:layout_constraintVertical_bias="0.0" />
 
@@ -121,17 +126,17 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:padding="10dp"
-        android:text="1"
+        android:text=""
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView17"
-        app:layout_constraintStart_toEndOf="@+id/like_icon"
+        app:layout_constraintBottom_toTopOf="@+id/review_text"
+        app:layout_constraintStart_toEndOf="@+id/like_button"
         app:layout_constraintTop_toBottomOf="@+id/Main_image"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/textView17"
+        android:id="@+id/review_text"
         android:layout_width="372dp"
         android:layout_height="394dp"
         android:layout_gravity="start"
@@ -144,7 +149,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dislike_icon" />
+        app:layout_constraintTop_toBottomOf="@+id/dislike_button" />
 
     <EditText
         android:id="@+id/chat_bar"
