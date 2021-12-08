@@ -76,7 +76,113 @@
         app:layout_constraintStart_toEndOf="@+id/Main_image"
         app:layout_constraintTop_toBottomOf="@+id/telephone_review" />
 
+    <ImageView
+        android:id="@+id/like_icon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Main_image"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/like" />
 
+    <ImageView
+        android:id="@+id/dislike_icon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.022"
+        app:layout_constraintStart_toEndOf="@+id/like_amount"
+        app:layout_constraintTop_toBottomOf="@+id/Main_image"
+        app:srcCompat="@drawable/dislike" />
+
+    <TextView
+        android:id="@+id/dislike_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="10dp"
+        android:text="1"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView17"
+        app:layout_constraintStart_toEndOf="@+id/dislike_icon"
+        app:layout_constraintTop_toBottomOf="@+id/Main_image"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/like_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="10dp"
+        android:text="1"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView17"
+        app:layout_constraintStart_toEndOf="@+id/like_icon"
+        app:layout_constraintTop_toBottomOf="@+id/Main_image"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="372dp"
+        android:layout_height="394dp"
+        android:layout_gravity="start"
+        android:layout_marginTop="28dp"
+        android:background="@android:color/transparent"
+        android:gravity="top"
+        android:hint="첫 리뷰를 달아주세요:)"
+        android:scrollbars="vertical"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dislike_icon" />
+
+    <EditText
+        android:id="@+id/chat_bar"
+        android:layout_width="393dp"
+        android:layout_height="40dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/copyright"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/copyright"
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:layout_marginTop="28dp"
+        android:background="#FFFFFF"
+        android:gravity="start"
+        android:text=" copyright"
+        android:textColor="#595B5E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/button_send"
+        android:layout_width="47dp"
+        android:layout_height="39dp"
+        android:background="@android:color/transparent"
+        android:padding="5dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/arrow"
+        app:layout_constraintBottom_toBottomOf="@+id/chat_bar"
+        app:layout_constraintEnd_toEndOf="@+id/chat_bar"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
