@@ -6,30 +6,30 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 
-import com.example.finalproject.databinding.ActivitySecondBinding;
+import com.example.finalproject.databinding.FitnessDetailBinding;
 
-public class SecondActivity extends AppCompatActivity {
-    ActivitySecondBinding binding;
+public class DetailFitness extends AppCompatActivity {
+    FitnessDetailBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivitySecondBinding.inflate(getLayoutInflater());
+        binding = FitnessDetailBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         binding.buttonClose.setOnClickListener(v -> finish());
         binding.buttonLearnmore.setOnClickListener(v -> openLink());
         binding.buttonLocation.setOnClickListener(v -> searchLocation());
-        binding.buttonReview.setOnClickListener(v -> startThirdActivity());
+        binding.buttonReview.setOnClickListener(v -> startReviewActivity());
     }
 
-    public void startThirdActivity() {
-        Intent intent = new Intent(this, ThirdActivity.class);
+    public void startReviewActivity() {
+        Intent intent = new Intent(this, ReviewFitness.class);
         startActivity(intent);
     }
 
     public void finish() {
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, MainFitness.class);
         startActivity(intent);
     }
 

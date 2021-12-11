@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#595B5E"
-    tools:context=".ThirdActivity">
+    tools:context=".ReviewFitness">
 
     <Button
         android:id="@+id/buttonClose_third"
@@ -153,12 +153,12 @@
 
     <EditText
         android:id="@+id/chat_bar"
-        android:layout_width="393dp"
+        android:layout_width="328dp"
         android:layout_height="40dp"
         android:background="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/copyright"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -186,6 +186,18 @@
         android:src="@drawable/arrow"
         app:layout_constraintBottom_toBottomOf="@+id/chat_bar"
         app:layout_constraintEnd_toEndOf="@+id/chat_bar"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/personal_ID"
+        android:layout_width="65dp"
+        android:layout_height="40dp"
+        android:background="#B5B4B4"
+        android:hint="ID"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/copyright"
+        app:layout_constraintEnd_toStartOf="@+id/chat_bar"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
 

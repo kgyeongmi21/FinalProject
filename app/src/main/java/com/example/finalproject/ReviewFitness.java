@@ -6,20 +6,21 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
 import android.widget.Toast;
+import java.io.File;
 
-import com.example.finalproject.databinding.ActivityMainBinding;
-import com.example.finalproject.databinding.ActivitySecondBinding;
-import com.example.finalproject.databinding.ActivityThirdBinding;
+import com.example.finalproject.databinding.FitnessReviewBinding;
+import com.example.finalproject.utils.FileUtils;
 
-public class ThirdActivity extends AppCompatActivity {
-    ActivityThirdBinding binding;
+public class ReviewFitness extends AppCompatActivity {
+    FitnessReviewBinding binding;
     private int likecount = 0;
     private int dislikecount = 0;
+    private final String saveReviewData = "memo.txt";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityThirdBinding.inflate(getLayoutInflater());
+        binding = FitnessReviewBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         binding.reviewText.setMovementMethod(new ScrollingMovementMethod());
@@ -57,17 +58,22 @@ public class ThirdActivity extends AppCompatActivity {
     }
 
     public void finish() {
-        Intent intent = new Intent(this, SecondActivity.class);
+        Intent intent = new Intent(this, DetailFitness.class);
         startActivity(intent);
     }
 
     private void send() {
         String message = binding.chatBar.getText().toString();
+        String ID = binding.personalID.getText().toString();
         if (message.isEmpty()) {
             Toast.makeText(this, "리뷰를 입력해 주세요", Toast.LENGTH_SHORT).show();
             return;
         }
-        binding.reviewText.setText(binding.reviewText.getText() + "경미: " + message + '\n');
+
+        String contents = binding.reviewText.getText().toString();
+        FileUtils.writeFile(this, saveReviewData, contents);
+
+        binding.reviewText.setText(binding.reviewText.getText() + ID + ": " + message + '\n');
         binding.chatBar.setText("");
         moveScroll();
     }
