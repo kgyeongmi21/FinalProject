@@ -1,316 +1,327 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/buttonClose2"
+            android:layout_width="62dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/white"
+            android:outlineProvider="background"
+            android:text="뒤로"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.072"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_MNfitness"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="7dp"
+            android:text="MN휘트니스\n강남점"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toStartOf="@+id/textView5"
+            app:layout_constraintHorizontal_bias="0.402"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_gorilla_gym" />
+
+        <TextView
+            android:id="@+id/text_MNfitness2"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="7dp"
+            android:text="MN휘트니스\n강남점"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toStartOf="@+id/textView"
+            app:layout_constraintHorizontal_bias="0.407"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_MNfitness" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="24dp"
+            android:text="휘트니스피플\n신림점"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.979"
+            app:layout_constraintStart_toEndOf="@+id/textView12"
+            app:layout_constraintTop_toBottomOf="@+id/image_fitnesspeople_sinlim" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="7dp"
+            android:text="스퀘어짐\n가좌점"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.242"
+            app:layout_constraintStart_toEndOf="@+id/textView11"
+            app:layout_constraintTop_toBottomOf="@+id/image_squaregym_gajua" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="7dp"
+            android:text="자마이카\n휘트니스\n화곡점"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.099"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_jamaica_hwagok" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="7dp"
+            android:text="휘트니스W"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toStartOf="@+id/textView8"
+            app:layout_constraintHorizontal_bias="0.407"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_fitnessw" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="7dp"
+            android:text="MN휘트니스\n강남점"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.671"
+            app:layout_constraintStart_toEndOf="@+id/textView5"
+            app:layout_constraintTop_toBottomOf="@+id/image_spoani_gangnam1" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="7dp"
+            android:text="에이플랜짐"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_aplangym" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="7dp"
+            android:text="휘트니스\n에이든\n홍대점"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.675"
+            app:layout_constraintStart_toEndOf="@+id/textView8"
+            app:layout_constraintTop_toBottomOf="@+id/image_aiden" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="79dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="156dp"
+            android:text="휴메이크\n휘트니스\n강남점"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_humake" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="7dp"
+            android:text="엘스퀘어\n휘트니스"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_lsquare" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="7dp"
+            android:text="휘트니스FM\n서울대점"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.675"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/image_fitnessfm" />
+
+        <ImageView
+            android:id="@+id/image_MNfitness"
+            android:layout_width="103dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/mnfitness"
+            app:layout_constraintEnd_toStartOf="@+id/image_lsquare"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonClose2" />
+
+        <ImageView
+            android:id="@+id/image_gorilla_gym"
+            android:layout_width="103dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="7dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/gorilla_gym"
+            app:layout_constraintEnd_toStartOf="@+id/image_humake"
+            app:layout_constraintHorizontal_bias="0.38"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_MNfitness2" />
+
+        <ImageView
+            android:id="@+id/image_squaregym_gajua"
+            android:layout_width="103dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="7dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/squaregym_gajua"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <ImageView
+            android:id="@+id/image_jamaica_hwagok"
+            android:layout_width="103dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="7dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/jamaica_hwagok"
+            app:layout_constraintEnd_toStartOf="@+id/image_squaregym_gajua"
+            app:layout_constraintHorizontal_bias="0.38"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+        <ImageView
+            android:id="@+id/image_fitnessw"
+            android:layout_width="103dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="7dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fitnessw"
+            app:layout_constraintEnd_toStartOf="@+id/image_aplangym"
+            app:layout_constraintHorizontal_bias="0.315"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_MNfitness" />
+
+        <ImageView
+            android:id="@+id/image_aplangym"
+            android:layout_width="103dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="7dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/aplangym"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <ImageView
+            android:id="@+id/image_spoani_gangnam1"
+            android:layout_width="103dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="7dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/spoani_gangnam1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.619"
+            app:layout_constraintStart_toEndOf="@+id/image_humake"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <ImageView
+            android:id="@+id/image_fitnesspeople_sinlim"
+            android:layout_width="103dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="7dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fitnesspeople_sinlim"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.941"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <ImageView
+            android:id="@+id/image_humake"
+            android:layout_width="103dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="7dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/humake_gangnam"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <ImageView
+            android:id="@+id/image_aiden"
+            android:layout_width="103dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="7dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/aiden_hongdae"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.604"
+            app:layout_constraintStart_toEndOf="@+id/image_aplangym"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <ImageView
+            android:id="@+id/image_lsquare"
+            android:layout_width="103dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="7dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/lsquare"
+            app:layout_constraintEnd_toStartOf="@+id/image_fitnessfm"
+            app:layout_constraintHorizontal_bias="0.847"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonClose2" />
+
+        <ImageView
+            android:id="@+id/image_fitnessfm"
+            android:layout_width="103dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="7dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fitnessfm_seoul"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.941"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonClose2" />
 
 
-    <Button
-        android:id="@+id/buttonClose2"
-        android:layout_width="62dp"
-        android:layout_height="36dp"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="@color/white"
-        android:outlineProvider="background"
-        android:text="뒤로"
-        android:textColor="#000000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.072"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/text_MNfitness"
-        android:layout_width="80dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="7dp"
-        android:text="MN휘트니스\n강남점"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toStartOf="@+id/textView5"
-        app:layout_constraintHorizontal_bias="0.402"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/image_gorilla_gym" />
-
-    <TextView
-        android:id="@+id/text_MNfitness2"
-        android:layout_width="80dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="7dp"
-        android:text="MN휘트니스\n강남점"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toStartOf="@+id/textView"
-        app:layout_constraintHorizontal_bias="0.407"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/image_MNfitness" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="80dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="7dp"
-        android:layout_marginEnd="24dp"
-        android:text="휘트니스피플\n신림점"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.979"
-        app:layout_constraintStart_toEndOf="@+id/textView12"
-        app:layout_constraintTop_toBottomOf="@+id/image_fitnesspeople_sinlim" />
-
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="80dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="7dp"
-        android:text="스퀘어짐\n가좌점"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.242"
-        app:layout_constraintStart_toEndOf="@+id/textView11"
-        app:layout_constraintTop_toBottomOf="@+id/image_squaregym_gajua" />
-
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="80dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="7dp"
-        android:text="자마이카\n휘트니스\n화곡점"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.099"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/image_jamaica_hwagok" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="80dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="7dp"
-        android:text="휘트니스W"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toStartOf="@+id/textView8"
-        app:layout_constraintHorizontal_bias="0.407"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/image_fitnessw" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="80dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="7dp"
-        android:text="MN휘트니스\n강남점"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.671"
-        app:layout_constraintStart_toEndOf="@+id/textView5"
-        app:layout_constraintTop_toBottomOf="@+id/image_spoani_gangnam1" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="80dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="7dp"
-        android:text="에이플랜짐"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/image_aplangym" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="80dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="7dp"
-        android:text="휘트니스\n에이든\n홍대점"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.675"
-        app:layout_constraintStart_toEndOf="@+id/textView8"
-        app:layout_constraintTop_toBottomOf="@+id/image_aiden" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="79dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="7dp"
-        android:layout_marginEnd="156dp"
-        android:text="휴메이크\n휘트니스\n강남점"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/image_humake" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="80dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="7dp"
-        android:text="엘스퀘어\n휘트니스"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/image_lsquare" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="80dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="7dp"
-        android:text="휘트니스FM\n서울대점"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.675"
-        app:layout_constraintStart_toEndOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/image_fitnessfm" />
-
-    <ImageView
-        android:id="@+id/image_MNfitness"
-        android:layout_width="103dp"
-        android:layout_height="110dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="7dp"
-        android:src="@drawable/mnfitness"
-        app:layout_constraintEnd_toStartOf="@+id/image_lsquare"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonClose2" />
-
-    <ImageView
-        android:id="@+id/image_gorilla_gym"
-        android:layout_width="103dp"
-        android:layout_height="110dp"
-        android:layout_marginTop="7dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/gorilla_gym"
-        app:layout_constraintEnd_toStartOf="@+id/image_humake"
-        app:layout_constraintHorizontal_bias="0.38"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_MNfitness2" />
-
-    <ImageView
-        android:id="@+id/image_squaregym_gajua"
-        android:layout_width="103dp"
-        android:layout_height="110dp"
-        android:layout_marginTop="7dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/squaregym_gajua"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
-
-    <ImageView
-        android:id="@+id/image_jamaica_hwagok"
-        android:layout_width="103dp"
-        android:layout_height="110dp"
-        android:layout_marginTop="7dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/jamaica_hwagok"
-        app:layout_constraintEnd_toStartOf="@+id/image_squaregym_gajua"
-        app:layout_constraintHorizontal_bias="0.38"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
-
-    <ImageView
-        android:id="@+id/image_fitnessw"
-        android:layout_width="103dp"
-        android:layout_height="110dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="7dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/fitnessw"
-        app:layout_constraintEnd_toStartOf="@+id/image_aplangym"
-        app:layout_constraintHorizontal_bias="0.315"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_MNfitness" />
-
-    <ImageView
-        android:id="@+id/image_aplangym"
-        android:layout_width="103dp"
-        android:layout_height="110dp"
-        android:layout_marginTop="7dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/aplangym"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
-
-    <ImageView
-        android:id="@+id/image_spoani_gangnam1"
-        android:layout_width="103dp"
-        android:layout_height="110dp"
-        android:layout_marginTop="7dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/spoani_gangnam1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.619"
-        app:layout_constraintStart_toEndOf="@+id/image_humake"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <ImageView
-        android:id="@+id/image_fitnesspeople_sinlim"
-        android:layout_width="103dp"
-        android:layout_height="110dp"
-        android:layout_marginTop="7dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/fitnesspeople_sinlim"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.941"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
-    <ImageView
-        android:id="@+id/image_humake"
-        android:layout_width="103dp"
-        android:layout_height="110dp"
-        android:layout_marginTop="7dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/humake_gangnam"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <ImageView
-        android:id="@+id/image_aiden"
-        android:layout_width="103dp"
-        android:layout_height="110dp"
-        android:layout_marginTop="7dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/aiden_hongdae"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.604"
-        app:layout_constraintStart_toEndOf="@+id/image_aplangym"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
-
-    <ImageView
-        android:id="@+id/image_lsquare"
-        android:layout_width="103dp"
-        android:layout_height="110dp"
-        android:layout_marginTop="7dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/lsquare"
-        app:layout_constraintEnd_toStartOf="@+id/image_fitnessfm"
-        app:layout_constraintHorizontal_bias="0.847"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonClose2" />
-
-    <ImageView
-        android:id="@+id/image_fitnessfm"
-        android:layout_width="103dp"
-        android:layout_height="110dp"
-        android:layout_marginTop="7dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/fitnessfm_seoul"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.941"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonClose2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>
