@@ -20,6 +20,7 @@ public class ReviewFitness extends AppCompatActivity {
     private final String saveReviewData = "memo.txt";
     private final String saveLikeAmount = "memo2.txt";
     private final String saveDislikeAmount = "memo3.txt";
+    private boolean result = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -99,12 +100,14 @@ public class ReviewFitness extends AppCompatActivity {
     }
 
     private void save(){
+        Toast.makeText(this, "리뷰가 등록되었습니다.", Toast.LENGTH_SHORT).show();
         String contents = binding.reviewText.getText().toString();
         FileUtils.writeFile(this, saveReviewData, contents);
         String like = binding.likeAmount.getText().toString();
         FileUtils.writeFile(this, saveLikeAmount, like);
         String dislike = binding.dislikeAmount.getText().toString();
         FileUtils.writeFile(this, saveDislikeAmount, dislike);
+
 
 
     }
