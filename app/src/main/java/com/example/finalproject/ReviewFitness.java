@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
 import android.widget.Toast;
 import java.io.File;
+import java.io.FileNotFoundException;
 
 import com.example.finalproject.databinding.FitnessReviewBinding;
 import com.example.finalproject.utils.FileUtils;
@@ -17,6 +18,8 @@ public class ReviewFitness extends AppCompatActivity {
     private int likecount = 0;
     private int dislikecount = 0;
     private final String saveReviewData = "memo.txt";
+    private final String saveLikeAmount = "memo2.txt";
+    private final String saveDislikeAmount = "memo3.txt";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,8 +31,29 @@ public class ReviewFitness extends AppCompatActivity {
         binding.buttonSend.setOnClickListener(v -> send());
         binding.likeButton.setOnClickListener(v -> pluscounter());
         binding.dislikeButton.setOnClickListener(v -> minuscounter());
+        binding.reviewSave.setOnClickListener(v -> save());
 
         binding.buttonCloseThird.setOnClickListener(v -> finish());
+
+        try {
+            String loadedContents = FileUtils.readFile(this, saveReviewData);
+            binding.reviewText.setText(loadedContents + '\n');
+        } catch (FileNotFoundException e) {
+        }
+
+        try {
+            String loadedLike = FileUtils.readFile(this, saveLikeAmount);
+            binding.likeAmount.setText(loadedLike);
+        } catch (FileNotFoundException e) {
+        }
+
+        try {
+            String loadedDislike = FileUtils.readFile(this, saveDislikeAmount);
+            binding.dislikeAmount.setText(loadedDislike);
+        } catch (FileNotFoundException e) {
+        }
+
+
     }
 
     private void moveScroll() {
@@ -74,6 +98,17 @@ public class ReviewFitness extends AppCompatActivity {
         startActivity(intent);
     }
 
+    private void save(){
+        String contents = binding.reviewText.getText().toString();
+        FileUtils.writeFile(this, saveReviewData, contents);
+        String like = binding.likeAmount.getText().toString();
+        FileUtils.writeFile(this, saveLikeAmount, like);
+        String dislike = binding.dislikeAmount.getText().toString();
+        FileUtils.writeFile(this, saveDislikeAmount, dislike);
+
+
+    }
+
     private void send() {
         String message = binding.chatBar.getText().toString();
         if (message.isEmpty()) {
@@ -87,8 +122,6 @@ public class ReviewFitness extends AppCompatActivity {
             return;
         }
 
-        String contents = binding.reviewText.getText().toString();
-        FileUtils.writeFile(this, saveReviewData, contents);
 
         binding.reviewText.setText(binding.reviewText.getText() + ID + ": " + message + '\n');
         binding.chatBar.setText("");
