@@ -13,6 +13,7 @@ import com.example.finalproject.utils.FileUtils;
 
 public class ReviewFitness extends AppCompatActivity {
     FitnessReviewBinding binding;
+    private int onecount = 0;
     private int likecount = 0;
     private int dislikecount = 0;
     private final String saveReviewData = "memo.txt";
@@ -40,13 +41,24 @@ public class ReviewFitness extends AppCompatActivity {
     }
 
     private void pluscounter() {
-        likecount++;
-        updatelikeCount();
+        if (onecount ==0 ) {
+            likecount++;
+            onecount++;
+            updatelikeCount();
+        } else {
+            Toast.makeText(this, "버튼은 한 번만 누를 수 있습니다", Toast.LENGTH_SHORT).show();
+        }
     }
 
     private void minuscounter() {
-        dislikecount++;
-        updatedislikeCount2();
+        if (onecount ==0 ) {
+            dislikecount++;
+            onecount++;
+            updatedislikeCount2();
+        } else {
+            Toast.makeText(this, "버튼은 한 번만 누를 수 있습니다", Toast.LENGTH_SHORT).show();
+        }
+
     }
 
     private void updatelikeCount() {
@@ -64,9 +76,14 @@ public class ReviewFitness extends AppCompatActivity {
 
     private void send() {
         String message = binding.chatBar.getText().toString();
-        String ID = binding.personalID.getText().toString();
         if (message.isEmpty()) {
             Toast.makeText(this, "리뷰를 입력해 주세요", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        String ID = binding.personalID.getText().toString();
+        if (ID.isEmpty()) {
+            Toast.makeText(this, "아이디를 입력해 주세요", Toast.LENGTH_SHORT).show();
             return;
         }
 
@@ -77,4 +94,6 @@ public class ReviewFitness extends AppCompatActivity {
         binding.chatBar.setText("");
         moveScroll();
     }
+
+
 }

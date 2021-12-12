@@ -78,32 +78,31 @@
 
     <ImageButton
         android:id="@+id/like_button"
-        android:layout_width="45dp"
-        android:layout_height="45dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
         android:layout_marginStart="92dp"
         android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
         android:scaleType="fitCenter"
         android:src="@drawable/like"
-        android:background="@android:color/transparent"
         app:layout_constraintBottom_toTopOf="@+id/review_text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Main_image"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.222" />
 
     <ImageButton
         android:id="@+id/dislike_button"
-        android:layout_width="45dp"
-        android:layout_height="45dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
         android:layout_marginStart="52dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:background="@android:color/transparent"
         android:scaleType="fitCenter"
         android:src="@drawable/dislike"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.022"
+        app:layout_constraintHorizontal_bias="0.027"
         app:layout_constraintStart_toEndOf="@+id/like_amount"
-        app:layout_constraintTop_toBottomOf="@+id/Main_image"
-         />
+        app:layout_constraintTop_toBottomOf="@+id/Main_image" />
 
     <TextView
         android:id="@+id/dislike_amount"
